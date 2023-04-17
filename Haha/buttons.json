@@ -1,0 +1,34 @@
+[
+    {
+        "src": "sounds&images/rock_vineboom.png",
+        "alt": "vine_boom"
+    },
+    {
+        "src":"sounds&images/discord_ping.webp",
+        "alt":"discord-notification"
+    },
+    {
+        "src":"sounds&images/bonk.png",
+        "alt":"bonk"
+    },
+    {
+        "src":"sounds&images/bruh.png",
+        "alt":"bruh_sound"
+    },
+    {
+        "src":"sounds&images/cartoon_running.png",
+        "alt":"cartoon_running"
+    },
+    {
+        "src":"sounds&images/emoji_pointing.jpeg",
+        "alt":"emoji_laugh"
+    },
+    {
+        "src":"sounds&images/Taco_bell_logo.png",
+        "alt":"taco_bell_sound"
+    },
+    {
+        "src":"sounds&images/what_the_dog_doin.png",
+        "alt":"what_the_dog_doin"
+    }
+]

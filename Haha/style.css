@@ -1,0 +1,31 @@
+.fade_Out {
+    width: 300px;
+    height: 300px;
+    animation: fadeOut 1s; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+
+}
+
+.size {
+    width: 200px;
+    height: 200px;
+}
+
+
+@keyframes fadeOut {
+
+    from {
+        opacity: 1;
+       
+    }
+
+    to {
+        opacity: 0;
+      
+    }
+}
+

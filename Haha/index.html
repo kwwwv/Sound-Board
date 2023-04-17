@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Page Title</title>
+  </head>
+  <body>
+
+    <div id = "buttons"></div>
+    <script src= "functions.js"></script>
+    <script>
+
+      const sounds = [
+        { src: "sounds&images/rock_vineboom.png", alt: "vine_boom" },
+        { src: "sounds&images/discord_ping.webp", alt: "discord-notification" },
+        { src:"sounds&images/bonk.png", alt:"bonk" },
+        { src:"sounds&images/bruh.png", alt:"bruh_sound" },
+        { src:"sounds&images/cartoon_running.png", alt:"cartoon_running" },
+        { src:"sounds&images/emoji_pointing.jpeg", alt:"emoji_laugh" },
+        { src:"sounds&images/Taco_bell_logo.png", alt:"taco_bell_sound" },
+        { src:"sounds&images/what_the_dog_doin.png", alt:"what_the_dog_doin" }
+      ];
+
+      const button_container = document.getElementById("buttons");
+
+      sounds.forEach(x => {
+
+        const img = document.createElement("img");
+        img.src = x.src;
+        img.alt = x.alt; 
+        img.classList.add('size')
+
+        const button = document.createElement("button");
+        button.appendChild(img);
+        
+
+        button.addEventListener("click", function() {
+          playSound(x.alt, x.src);
+        });
+
+        button_container.appendChild(button);
+
+      });
+    </script>
+
+    
+    <!-- <script src= "functions.js"></script>
+    <button> <img class="size" src="sounds&images/rock_vineboom.png"  alt="vine_boom" onclick="playSound(this.alt, this.src)"> </button>
+    <button> <img class="size" src="sounds&images/discord_ping.webp"  alt="discord-notification" onclick="playSound(this.alt, this.src)"> </button> -->
+
+  </body>
+</html>
+
